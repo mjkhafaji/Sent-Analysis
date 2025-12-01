@@ -8,6 +8,18 @@ A cloud-native microservice that performs Natural Language Processing (NLP) to d
 * **AI Engine:** VaderSentiment (NLTK-based logic)
 * **Infrastructure:** AWS Function URL (HTTPS Endpoint)
 
+## 🌐 Public Endpoint
+The API is currently live on AWS Lambda. You can test it using `curl`, Postman, or PowerShell.
+
+**Base URL:**
+`https://s2i3rtxm4uxdawwlpu4e6q42pq0hmfum.lambda-url.us-east-1.on.aws/`
+
+### Quick Test (Copy & Paste into Terminal)
+```powershell
+curl -X POST "https://s2i3rtxm4uxdawwlpu4e6q42pq0hmfum.lambda-url.us-east-1.on.aws/" \
+     -H "Content-Type: application/json" \
+     -d '{"text": "I am impressed by this cloud architecture."}'
+     
 ## Usage
 Send a POST request to the API endpoint with a JSON body:
 {
